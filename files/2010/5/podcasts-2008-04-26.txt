@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+<head>
+	<title>iTunes Subscribed Feeds</title>
+	<dateCreated>Wed, 30 Apr 2008 01:16:12 GMT</dateCreated>
+	<dateModified>Wed, 30 Apr 2008 01:16:12 GMT</dateModified>
+</head>
+<body>
+	<outline text="Windows Weekly" type="rss" xmlUrl="http://leoville.tv/podcasts/ww.xml" htmlUrl="http://twit.tv/ww" />
+	<outline text="Hanselminutes" type="rss" xmlUrl="http://www.hanselminutes.com/hanselminutes_MP3Direct.xml" htmlUrl="http://www.hanselminutes.com" />
+	<outline text="David Allen Company Updates" type="rss" xmlUrl="http://www.davidco.com/master_rss.php" htmlUrl="http://www.davidco.com/" />
+	<outline text="MacBreak Weekly" type="rss" xmlUrl="http://leoville.tv/podcasts/mbw.xml" htmlUrl="http://twit.tv/mbw" />
+	<outline text="You Suck at Web Design" type="rss" xmlUrl="http://feeds.feedburner.com/YouSuckAtWebDesign" htmlUrl="http://www.yousuckatwebdesign.com" />
+	<outline text="Real Time with Bill Maher" type="rss" xmlUrl="http://www.hbo.com/apps/podcasts/podcast.xml?a=2" htmlUrl="http://www.hbo.com/billmaher" />
+	<outline text="The Kasper Hauser Comedy Podcast" type="rss" xmlUrl="http://feeds.feedburner.com/kasperhauser" htmlUrl="http://www.kasperhauser.com" />
+	<outline text="BrainReady BrainCasts- Fight the effects that aging has already had on your brain, just by listening!" type="rss" xmlUrl="http://www.brainready.com/podcast.xml" htmlUrl="http://www.brainready.com" />
+	<outline text="The Accidental Creative" type="rss" xmlUrl="http://feeds.feedburner.com/accidentalcreative/podcast" htmlUrl="http://www.accidentalcreative.com" />
+	<outline text="HBR IdeaCast" type="rss" xmlUrl="http://hbsp.libsyn.com/rss" htmlUrl="http://www.hbrideacast.org" />
+	<outline text="Audible Ajax" type="rss" xmlUrl="http://media.ajaxian.com" htmlUrl="http://media.ajaxian.com/" />
+	<outline text="WebDevRadio.com - web development podcast" type="rss" xmlUrl="http://feeds.feedburner.com/WebdevradioPodcastHome" htmlUrl="http://www.webdevradio.com" />
+	<outline text="PRI: The Sound of Young America" type="rss" xmlUrl="http://feeds.feedburner.com/tsoya" htmlUrl="http://www.maximumfun.org" />
+	<outline text="After the Flag - Official MotoGP Webcast" type="rss" xmlUrl="http://www.motogp.com/xml/en/sindication/podcast_motogp_after_flag_video.xml" htmlUrl="http://www.motogp.com/" />
+	<outline text="NPR: Fresh Air Podcast" type="rss" xmlUrl="http://www.npr.org/rss/podcast.php?id=13" htmlUrl="http://freshair.npr.org?ft=2&#38;f=13" />
+	<outline text="Onion News Network (Video)" type="rss" xmlUrl="http://feeds.theonion.com/OnionNewsNetwork" htmlUrl="http://tv.theonion.com/" />
+	<outline text=".Net Preacher Show" type="rss" xmlUrl="http://feeds.feedburner.com/TheDotNetPreacher" htmlUrl="http://www.dotnetpreacher.com/tabid/36/default.aspx" />
+	<outline text="OnMicrosoft (video)" type="rss" xmlUrl="http://www.podango.com/feeds/feed.php?pid=2415" htmlUrl="http://www.informit.com/podcasts/" />
+	<outline text="Radio 538: Tiësto`s club life podcast" type="rss" xmlUrl="http://www.radio538.nl/clubnouveau/podcast.xml" htmlUrl="http://www.radio538.nl/clublife" />
+	<outline text="FLOSS Weekly" type="rss" xmlUrl="http://leo.am/podcasts/floss" htmlUrl="http://twit.tv" />
+	<outline text="Battlestar Galactica Podcast" type="rss" xmlUrl="http://www.scifi.com/battlestar/downloads/podcast/podcast.xml" htmlUrl="http://www.scifi.com/battlestar/" />
+	<outline text="Galactica Watercooler" type="rss" xmlUrl="http://galacticawatercooler.com/category/Podcast/feed/" htmlUrl="http://www.galacticawatercooler.com" />
+	<outline text="Media Conversations" type="rss" xmlUrl="http://feeds.feedburner.com/MediaConversations-iTunes" htmlUrl="http://mediaconversations.blip.tv" />
+	<outline text="Google Developer Podcast" type="rss" xmlUrl="http://feeds.feedburner.com/GoogleDeveloperPodcast" htmlUrl="http://google-code-updates.blogspot.com/search/label/podcast" />
+	<outline text="OnSoftware (video)" type="rss" xmlUrl="http://www.podango.com/feeds/feed.php?pid=2066" htmlUrl="http://www.informit.com/podcasts/channel.aspx?c=dadf92ca-3bdc-484e-9cd8-cbfe0cfc0de6" />
+	<outline text="The RumblestripRadio Podcast" type="rss" xmlUrl="http://rumblestrip.libsyn.com/rss" htmlUrl="http://rumblestripradio.com" />
+	<outline text="Andy Moor's MoorMusic Podcast" type="rss" xmlUrl="http://feeds.feedburner.com/AndyMoorMoormusic" htmlUrl="http://www.andymoor.com" />
+	<outline text="A State Of Trance Official Podcast" type="rss" xmlUrl="http://www3.armadamusic.com/podcasts/podcast.php" htmlUrl="http://www3.armadamusic.com/podcasts/" />
+	<outline text="YUI Theater" type="rss" xmlUrl="http://feeds.feedburner.com/YuiTheater" htmlUrl="http://developer.yahoo.com/yui/theater/" />
+	<outline text="The ASP.NET Podcast by Wallace B. McClure and Paul Glavich" type="rss" xmlUrl="http://www.scalabledevelopment.com/ftp/ScalabilityWithDotNet.xml" htmlUrl="http://weblogs.asp.net/wallym" />
+	<outline text="Get-It-Done Guy's Quick and Dirty Tips to Work Less and Do More" type="rss" xmlUrl="http://www.quickanddirtytips.com/xml/getitdone.xml" htmlUrl="http://www.quickanddirtytips.com" />
+	<outline text="The Economist" type="rss" xmlUrl="http://www.economist.com/media/rss/economist.xml" htmlUrl="http://www.economist.com" />
+	<outline text="APM: A Prairie Home Companion's News from Lake Wobegon" type="rss" xmlUrl="http://americanpublicmedia.publicradio.org/podcasts/xml/prairie_home_companion/news_from_lake_wobegon.xml" htmlUrl="http://prairiehome.publicradio.org/" />
+	<outline text="The Rissington Podcast" type="rss" xmlUrl="http://feeds.feedburner.com/therissingtonpodcast" htmlUrl="http://therissingtonpodcast.co.uk/" />
+	<outline text="Polymorphic Podcast" type="rss" xmlUrl="http://polymorphicpodcast.com/podcast/feed/" htmlUrl="http://polymorphicpodcast.com/" />
+	<outline text="This Week in Photography" type="rss" xmlUrl="http://feeds.pixelcorps.com/feeds/twip.xml" htmlUrl="http://www.pixelcorps.tv/twip" />
+	<outline text="Technocracy Radio" type="rss" xmlUrl="http://technocracyradio.libsyn.com/rss" htmlUrl="http://technocracyradio.com" />
+	<outline text="Fear the Bug Video Podcast" type="rss" xmlUrl="http://feeds.feedburner.com/fearthebugpodcast" htmlUrl="http://www.fearthebug.com/" />
+	<outline text="A Taste of Russian" type="rss" xmlUrl="http://tasteofrussian.com/int" htmlUrl="http://tasteofrussian.com" />
+	<outline text="Business Russian" type="rss" xmlUrl="http://www.international.ucla.edu/languages/technology/podcasts/businessrussian/rss.asp" htmlUrl="http://www.international.ucla.edu/languages/technology/podcasts" />
+	<outline text="Speaking Russian" type="rss" xmlUrl="http://www.speakingruss-ru.1gb.ru/lesson11.xml" htmlUrl="http://www.speakingruss-ru.1gb.ru/" />
+	<outline text="Neverrain Recordings" type="rss" xmlUrl="http://www.neverrain.com/NeverrainPodcast.rss" htmlUrl="http://www.neverrain.com" />
+	<outline text="Official Video Action Clip" type="rss" xmlUrl="http://www.motogp.com/xml/en/sindication/podcast_video.xml" htmlUrl="http://www.motogp.com/" />
+	<outline text="BILL MOYERS JOURNAL | PBS" type="rss" xmlUrl="http://www.pbs.org/moyers/podcast.xml" htmlUrl="http://www.pbs.org/moyers/rss/media/redir/moyers/index.html" />
+	<outline text="Apple Phone Show" type="rss" xmlUrl="http://www.podango.com/feeds/feed.php?pid=284&#38;amid=360967624.001&#38;returnType=all" htmlUrl="http://www.applephoneshow.com" />
+	<outline text="boagworld.com: web design podcast" type="rss" xmlUrl="http://feeds.feedburner.com/boagworldpodcast?v=2" htmlUrl="http://www.boagworld.com/podcast/" />
+	<outline text="Stephen Fry's PODGRAMS" type="rss" xmlUrl="http://www.stephenfry.com/podcasts/rss.xml" htmlUrl="http://www.stephenfry.com/podcasts/index.html" />
+	<outline text="MotoGPod" type="rss" xmlUrl="http://feeds.feedburner.com/motogpod" htmlUrl="http://www.motogpod.com" />
+	<outline text="Formula 1 Blog" type="rss" xmlUrl="http://www.formula1blog.com/?feed=podcast" htmlUrl="http://www.formula1blog.com" />
+	<outline text="Rick Steves' Europe Video" type="rss" xmlUrl="http://podcasts.ricksteves.com/video_itunes.xml" htmlUrl="http://www.ricksteves.com" />
+	<outline text="Travel with Rick Steves" type="rss" xmlUrl="http://podcasts.ricksteves.com/ricksteves.xml" htmlUrl="http://www.ricksteves.com" />
+	<outline text="Lonely Planet Travelcasts" type="rss" xmlUrl="http://www.lonelyplanet.com/podcasts/travelcast.xml" htmlUrl="http://www.lonelyplanet.com" />
+	<outline text="The Gareth Emery Podcast" type="rss" xmlUrl="http://www.galexmusic.com/podcast/gareth.xml" htmlUrl="http://www.garethemerypodcast.com" />
+	<outline text="Chequered Flag Formula 1" type="rss" xmlUrl="http://downloads.bbc.co.uk/podcasts/fivelive/cff1/rss.xml" htmlUrl="http://www.bbc.co.uk/fivelive/programmes/formulaone.shtml" />
+	<outline text="this WEEK in MEDIA" type="rss" xmlUrl="http://feeds.pixelcorps.com/feeds/twim.xml" htmlUrl="http://pixelcorps.tv/this_week_in_media" />
+	<outline text="Hospital Records Podcast" type="rss" xmlUrl="http://www.zen54064.zen.co.uk/Hospital%20Records%20Podcast%201.xml" htmlUrl="www.hospitalrecords.com" />
+	<outline text="Summer Heights High" type="rss" xmlUrl="http://www.abc.net.au/tv/summerheightshigh/video/shh_mp4.xml" htmlUrl="http://www.abc.net.au/tv/summerheightshigh/" />
+	<outline text="You Look Nice Today" type="rss" xmlUrl="http://feeds.feedburner.com/YouLookNiceToday" htmlUrl="http://youlooknicetoday.com" />
+	<outline text="The Java Posse" type="rss" xmlUrl="http://feeds.feedburner.com/javaposse" htmlUrl="http://javaposse.com" />
+	<outline text="ThoughtWorks - IT Matters Podcast" type="rss" xmlUrl="http://podcast.thoughtworks.com/itmatters/it_matters.xml" htmlUrl="http://podcast.thoughtworks.com/" />
+	<outline text="stackoverflow" type="rss" xmlUrl="http://blog.stackoverflow.com/?feed=podcast" htmlUrl="http://blog.stackoverflow.com" />
+	<outline text="This Week in Django - MP3 Edition" type="rss" xmlUrl="http://media.djangonetcasts.com/twid_mp3.xml" htmlUrl="http://www.djangonetcasts.com/twid" />
+	<outline text="Rails Envy" type="rss" xmlUrl="http://feeds.feedburner.com/railsenvy-podcast" htmlUrl="http://www.railsenvy.com/podcast" />
+	<outline text="The WordPress Podcast" type="rss" xmlUrl="http://wp-community.org/feed/" htmlUrl="http://wp-community.org" />
+	<outline text=".NET Rocks!" type="rss" xmlUrl="http://feeds.feedburner.com/netRocksFullMp3Downloads" htmlUrl="http://www.dotnetrocks.com" />
+	<outline text="pixel8 :: what makes great user experiences?" type="rss" xmlUrl="http://pixel8.infragistics.com/podcast/feed" htmlUrl="http://getpixel8ed.com/" />
+	<outline text="Sparkling Client - The Silverlight Podcast" type="rss" xmlUrl="http://feeds.sparklingclient.com/SparklingClient" htmlUrl="http://www.sparklingclient.com" />
+</body>
+</opml>

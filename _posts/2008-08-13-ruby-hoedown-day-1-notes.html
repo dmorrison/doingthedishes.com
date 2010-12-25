@@ -1,0 +1,153 @@
+--- 
+layout: default
+title: Ruby Hoedown Day 1 Notes
+---
+<p>Here are the notes that I took from day 1 of the Ruby Hoedown conference. I hope I didn't misquote anyone too badly, but these are the points that stuck out to me the most.</p>  <h2>Ruby: A Year of Innovation</h2>  <p><i>Jason Seifer and Gregg Pollack</i></p>  <p><i><a href="/images/WindowsLiveWriter/RubyHoedownDay1Notes_12D9A/CIMG3640.jpg"><img style="border-top-width: 0px; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" height="282" alt="CIMG3640" src="/images/WindowsLiveWriter/RubyHoedownDay1Notes_12D9A/CIMG3640_thumb.jpg" width="467" border="0" /></a></i></p>  <p><em>Above: Jason as &quot;<a href="http://www.railsenvy.com/2007/9/10/ruby-on-rails-vs-django-commercial-7">DJ Ango</a>&quot; (in reference to the Django framework)</em></p>  <ul>   <li>This talk is not 100% Rails (it's a Ruby conference, after all) </li>    <li>We'll be talking about several cool Ruby libraries: </li>    <li>Rack      <ul>       <li>Framework A --&gt; Rack --&gt; Web application server </li>        <li>Serves as an adapter between numerous Ruby frameworks and web servers. </li>     </ul>   </li>    <li>Phusion Passenger      <ul>       <li>I needed a blog for my user group. </li>        <li>I chose TextDrive for hoster, and it was painful. </li>        <li>Switched to DreamHost, but it turned out to be HellHost. </li>        <li>Was too slow, needed something more powerful, but wait - it's just a freakin' blog! </li>        <li>Phusion Passenger came out (and it's compatible with Rack!) so you can use it with any framework (not just Rails). </li>     </ul>   </li>    <li>Github      <ul>       <li>What do you get when you mix SourceForge with Facebook? [Some people from the audience yell] GitHub! [I think one of said people was Chris Wanstrath, a co-creator of GitHub] </li>        <li>Features include Hardcore Forking Action! </li>        <li>GitHub is more than a year old, but it's adoption has taken off in the past year. </li>        <li>Many well-known projects, such as Rails itself, are now hosted there. </li>        <li>[I've been hearing so much about Git, it reminds me that I really, really need to get out of my SourceSafe and Subversion habits and try a distributed version control system like Git or Mercurial] </li>     </ul>   </li>    <li>Ruby EventMachine      <ul>       <li>Event processing library. </li>        <li>Like Twisted for Python, Apache Mina for Java, and Poe for Perl </li>        <li>You can do this stuff with threads, but its slow (and potentially deadlock dangerous). </li>        <li>Evented Mongrel took EventMachine and applied it to Mongrel, but there's a catch - EventMachine is best for fast requests that aren't long-running. </li>        <li>Recently built into Merb. </li>        <li>Use like so: deferred_requests[&quot;/uploads&quot;, &quot;/long_process&quot;] </li>        <li>Other alternatives: Thin, Ebb, and Starling. </li>     </ul>   </li>    <li>Redmine      <ul>       <li>For awhile, Trac was the only good project management application. </li>        <li>Redmine is a project management app written in Rails. </li>     </ul>   </li>    <li>Pool Party      <ul>       <li>Cloud EC2 computing made easy. </li>     </ul>   </li>    <li>make_resourceful      <ul>       <li>Scaffolds make it easy to generate data access code, but much of the code is duplicated. </li>        <li>Helps to eliminate duplicate code from scaffolding. </li>     </ul>   </li>    <li>Various screencast series have launched      <ul>       <li>Railscasts </li>        <li>Peepcode </li>        <li>Pragmatic Programmers screencasts </li>        <li>And soon.... EnvyCasts! </li>     </ul>   </li>    <li>Hpricot      <ul>       <li>doc = Hpricot.open(&quot;www.website.com&quot;) and then work on the doc object. </li>     </ul>   </li>    <li>Juggernaut      <ul>       <li>Server push with Rails (uses Flash) </li>     </ul>   </li>    <li>Praun      <ul>       <li>Ruby PDF generation </li>     </ul>   </li>    <li>Capistrano      <ul>       <li>Deployments made easy </li>     </ul>   </li>    <li>Ruby Virtual Machines      <ul>       <li>JRuby for the Java VM </li>        <li>IronRuby for .Net </li>     </ul>   </li>    <li>Skynet      <ul>       <li>Clones Google's map reduce functionality </li>     </ul>   </li>    <li>DataFabric      <ul>       <li>Allows DB sharding for scalability </li>     </ul>   </li>    <li>merb      <ul>       <li>Everything that Rails isn't </li>        <li>Lightweight, JavaScript library agnostic, DB access agnostic, but still with a strong set of defaults </li>     </ul>   </li>    <li>Sinatra      <ul>       <li>Very lightweight web app development. </li>        <li>Hello world web app in Sinatra:          <br />require &quot;sinatra&quot;           <br />get &quot;/&quot; do           <br />&#160;&#160;&#160; &quot;Hello world           <br />end </li>     </ul>   </li> </ul>  <h2>The Future is Now: Leveraging the Cloud with Ruby</h2> Robery Dempsey   <ul>   <li>I'm angry because people say Rails can't scale. </li>    <li>What is scalability? The ability to expand gracefully under load. </li>    <li>What do you need?      <ul>       <li>Servers </li>        <li>Storage </li>        <li>Access to other utilities </li>        <li>Not have to buy everything up front. </li>        <li>Can you do that with Ruby? Of course! ... that's the cloud </li>     </ul>   </li>    <li>Other ways other than using cloud computing.      <ul>       <li>High availability cluster. A set of servers that constantly ping each other. If one goes down, then another takes over. </li>        <li>Load balancing cluster. A routing mechanism directs traffic to various servers based on load. </li>        <li>Grid. A loosely coupled group of servers </li>     </ul>   </li>    <li>A Gartner study says that by 2011, startup companies will start buying a significant portion of their infrastructure on demand. </li>    <li>Amazon EC2. Neat, but you need to build reliability in yourself. I've had EC2 instances vaporized upon restart. If this is the only copy of your server, you're screwed. </li>    <li>There are alternatives to manual Amazon EC2:      <ul>       <li>Morph          <ul>           <li>Uses EC2, but has a custom, rigid deployment mechanism. </li>            <li>Doesn't even allow file-level access. </li>         </ul>       </li>        <li>RightScale          <ul>           <li>Lots of configuration options. </li>            <li>$2,500 setup, $500/month plus Amazon fees. </li>         </ul>       </li>        <li>Heroku          <ul>           <li>Free (for now!) </li>            <li>Later, will be charged based on... units of work kinda... (it's sketchy) </li>            <li>Everything is done in the browser </li>            <li>Automatic scaling </li>            <li>Work locally, then deploy </li>         </ul>       </li>        <li>PoolParty          <ul>           <li>Uses an Ubuntu EC2 AMI (Amazon machine image) </li>            <li>Not production ready </li>         </ul>       </li>        <li>Scalr </li>        <li>ElasticRails </li>     </ul>   </li>    <li>So, if you go straight with EC2 yourself, a standard EC2 deployment will cost <b>$432</b> for a good-sized app. </li>    <li>And you have to do a lot of configuration yourself. </li>    <li>His suggestion of 3rd party tools (from cheapest to most expensive and scalable):      <ol>       <li>Morph </li>        <li>Scalr </li>        <li>RightScale </li>     </ol>   </li>    <li>There are Ruby libraries to interact with various Amazon services such EC2, S3, SimpleDB, and SQS. </li>    <li>[There was a comment from the audience about a problem having mail sent from Amazon serves flagged as spam] </li>    <li>[There was another comment wishing that IT department would embrace cloud computing more] </li> </ul>  <h2>Mock Dialogue: Conversations on Testing and Mocking</h2> Joe O'Brien &amp; Jim Weirich   <ul>   <li>[Acted a scripted simulation of two developers working through difficult testing and mocking scenarios] </li>    <li>Concept of a fluent interface. Like in jQuery:      <pre><code>$('form#login')<br />    // hide all the labels inside the form with the 'optional' class<br />    .find('label.optional').hide().end()<br />    // add a red border to any password fields in the form<br />    .find('input:password').css('border', '1px solid red').end()<br />    // add a submit handler to the form<br />    .submit(function(){<br />        return confirm('Are you sure you want to submit?');<br />    });</code></pre>
+  </li>
+
+  <li>Mentioned <a href="http://www.developer.com/design/article.php/3700651">Psychology of Builds</a> article. The frequency of build or test runs drop dramatically when builds last longer than 30 seconds. </li>
+
+  <li>Michael Feathers guidelines for unit tests. </li>
+
+  <li>[This format of presentation seems to take you along lines of a conversation that I wouldn't necessarily go, but still, the style is differentl] </li>
+
+  <li>Difference between stubs and mocks: stubs fake objects that can give you data back, mocks are a little more involved. </li>
+
+  <li>Flexmock and Mocha mock frameworks for Ruby </li>
+
+  <li>Mocks still need to be supplemented with system tests that test the whole stack. </li>
+</ul>
+
+<h2>Ruby Best Practice Patterns</h2>
+Rein Henrichs 
+
+<ul>
+  <li>Best practices are a <u>current</u> understanding, and they do change. </li>
+
+  <li>Now, for a little introduction / diversion... </li>
+
+  <li>The Developers Dilemma - job security decreases as code maintainability increases. </li>
+
+  <li>So, to guard against this... Unfactoring! </li>
+
+  <li>Taking well-designed code and purposefully making it obscure to insure job security. </li>
+
+  <li>&quot;Decomposing&quot; methods. Naming methods incorrectly, even using Pig Latin, or other obfuscation techniques. </li>
+
+  <li>But seriously, on to the real talk... </li>
+
+  <li>Composed methods - try keeping methods small. </li>
+
+  <li>Kent Beck - Smalltalk Best Practices </li>
+
+  <li>Execution around method pattern 
+    <ul>
+      <li>How can I ensure 2 things happen? (ex: I want to open a file and ensure that it closes) </li>
+
+      <li>around_filter in Rails </li>
+
+      <li>Wrap an object in a block to make sure it has been completely initialized and uninitialized. </li>
+
+      <li>[The &quot;using&quot; keyword in C#] </li>
+    </ul>
+  </li>
+
+  <li>Sharing objects with multiple lines in a method. Pass variable into an initializer, initialize other temp variables and have them as shared variables within the class. </li>
+
+  <li>I urge people to look into Ruby libraries or various open source projects for examples of pattern usage. Ask yourself why the writers did something in a certain way. </li>
+
+  <li>Be aware when code doesn't feel right to you. </li>
+
+  <li>Code should be fun to write and read. </li>
+
+  <li>[Comment from David Black about the idea of taste and readability. Some things he's seen that people describe as readable don't seem readable to him. Rein responds that it's a valid point; people have different tastes in music, but still humans can generally agree on what harmony is and what scales we use.] </li>
+
+  <li>[Another commenter stated that it's important to separate generic patterns from Ruby idioms.] </li>
+</ul>
+
+<h2>Lightning Talks</h2>
+
+<ul>
+  <li>PJ Davis 
+    <ul>
+      <li>Web interface for God system monitoring tool </li>
+    </ul>
+  </li>
+
+  <li>Brian Lyles 
+    <ul>
+      <li>Test all the fucking time! </li>
+
+      <li>Become obsessed with testing. </li>
+
+      <li>I write code to make my specs turn green. </li>
+
+      <li>Various tools: 
+        <ul>
+          <li>TestSpec </li>
+
+          <li>Shoulda </li>
+
+          <li>Mspec </li>
+
+          <li>Cucumber </li>
+        </ul>
+      </li>
+
+      <li>Do not imitate the old masters, seek what they sought. </li>
+
+      <li>Is there every a time when you shouldn't test? Yes, when you're not coding. If it works without tests, it works by accident. </li>
+    </ul>
+  </li>
+
+  <li>Yousseff Mendelsohn 
+    <ul>
+      <li>&quot;Truthy&quot; gem package for Ruby. Helps to ease confusing true and false evaluations in Ruby. </li>
+
+      <li>Usage: variable.truthy? </li>
+
+      <li>Only nil and false are false in Ruby. Really. That's it. Stop looking. </li>
+    </ul>
+  </li>
+
+  <li>Another guy 
+    <ul>
+      <li>Making charts with Google Charts </li>
+
+      <li>gchartruby library </li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Keynote</h2>
+Chris Wanstrath 
+
+<ul>
+  <li>No slides, I will just read an essay. </li>
+
+  <li>In the future, Ruby will be more popular. </li>
+
+  <li>People will wax philosophic about the old days of Smalltalk (when they've never actually done Smalltalk). </li>
+
+  <li>The suits will come down upon us, but hopefully Ruby will stay good. </li>
+
+  <li>[His talk is well-written, but quoted Wikipedia too much for my taste, and without visual slides and little content, the majority of it fell flat on me.] </li>
+
+  <li>PHP has a ton of helpful methods (aka a shotgun blast of functions in the global namespace). </li>
+
+  <li>I haven't made a ton of money directly from open source software, but I have gotten a lot of work indirectly from it and through my reputation gained from working on open source. </li>
+
+  <li>You need to work on a side project. </li>
+
+  <li>But, you say you don't have the time? 
+    <ul>
+      <li>Stop reading RSS feeds, and instead rely on aggregation sites or speakers to give you the really important news. </li>
+
+      <li>Rely on people to filter for you. </li>
+    </ul>
+  </li>
+
+  <li>But what if people don't like it, it's already been done, or it's stupid?? </li>
+
+  <li>Forget it, just do a side project that you love. </li>
+</ul>
