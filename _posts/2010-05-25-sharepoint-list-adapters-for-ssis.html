@@ -1,0 +1,11 @@
+--- 
+layout: default
+title: SharePoint List Adapters for SSIS
+---
+<p><strong>Update - August 2, 2010</strong></p>
+<p>Support for specifying credentials in addition to using integrated  security was rolled into the main package. Currently, it's in beta, and  it can be downloaded from <a href="http://sqlsrvintegrationsrv.codeplex.com/releases/view/17652">here</a> (named "BetaSharePointListAdaptersSetup.msi" under "Other Available Downloads").</p>
+<p>My project is unneeded now, and will probably be deleted from Codeplex soon.</p>
+<hr />
+<p>On a project at work recently, we needed to create a report using SharePoint list data. We decided to use SQL Server Integration Services (SSIS), and looked at using <a href="http://sqlsrvintegrationsrv.codeplex.com/releases/view/17652">these</a> SharePoint list source and destination adapters on CodePlex.&nbsp;However, these sample adapters <a href="http://sqlsrvintegrationsrv.codeplex.com/Thread/View.aspx?ThreadId=56119">only supported Windows integrated authentication</a>, so I modified them to accept basic authentication.</p>
+<p>I've created a <a href="http://sharepoint4ssis.codeplex.com/">project on CodePlex</a> for these modified source and destination adapters, and also put together a simple release with the pre-built assemblies and simple instructions.</p>
+<p>I hope this helps someone who has a similar problem.</p>

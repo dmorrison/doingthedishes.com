@@ -1,0 +1,59 @@
+--- 
+layout: default
+title: Using Ruby and Rake with ASP.NET
+---
+<p>
+For awhile now at work, I&#39;ve been using a loose collection of <a href="http://www.microsoft.com/windowsserver2003/technologies/management/powershell/default.mspx">PowerShell</a> scripts and manual steps to handle deployment of ASP.NET sites and associated SQL Server databases. I recently switched to using a <a href="http://rake.rubyforge.org/">Rake</a> build script to not only automate deployment, but also to help in a few other tasks such as re-building the development database, and synchronizing the staging database with the production db. 
+</p>
+<p>
+Briefly, Rake is a Ruby version of Make, and is a framework for build scripts written in Ruby. Since a Rakefile (the main build file you work with) uses a plain Ruby syntax (albeit one that uses a few Rake conventions), it&#39;s very easy to get up to speed with if you know a little Ruby, and even if you don&#39;t, Ruby&#39;s syntax has a reputation for being fairly straightforward anyway. Rake also has many built-in library functions for handling builds and uses a <a href="http://martinfowler.com/articles/rake.html#DependencyBasedProgramming">dependency-based computational model</a>. For example, I can specify that task A depends on task B and be sure that task B is always called before task A: 
+</p>
+<font size="2">
+<pre>
+task :a =&gt; :b do
+&nbsp;&nbsp;&nbsp;&nbsp; puts &quot;World&quot; 
+end 
+task :b do
+&nbsp;&nbsp;&nbsp; puts &quot;Hello &quot; 
+end
+</pre>
+</font>
+<p>
+Rake is normally used in the Ruby world (such as for working with Ruby on Rails sites), but is generic enough to be usable with other setups such as .NET. Why did I switch to Rake? I tried, I really tried to like and use PowerShell. PowerShell is Microsoft&#39;s newer command line environment and scripting language. It&#39;s a definite improvement over the normal Windows command prompt, as it offers a greatly enhanced command set and direct interoperability with the .NET framework. PowerShell, as well as a light development environment for PowerShell scripts, are tentatively set to be included in Windows 7. 
+</p>
+<p>
+However, I was put off by PowerShell&#39;s syntax, which uses a blend of curly braces, mixed case keywords, dollar signs,&nbsp; and unconventional operators e.g. the less than or equal to operator in: 
+</p>
+<font size="2">for ( $i = 7; $i -le 84; $i+=7 ) { $i }</font> 
+<p>
+Also, since PowerShell is relatively new, there seems to be poor support for it. Editing support is not included with Visual Studio and it&#39;s not natively supported (with syntax highlighting, etc) in common free text editors such as Notepad++. Also, while you can write individual PowerShell scripts and tie them together yourself, there&#39;s not a robust framework such as Rake made specifically for builds (although there is the <a href="http://codebetter.com/blogs/james.kovacs/archive/2008/06/27/introducing-psake.aspx">psake</a> upstart). Ruby and Rake, on the other hand, are much more mature and established. 
+</p>
+<hr />
+<p>
+To deploy, the central steps that <a href="/file.axd?file=Rakefile.rb">my Rakefile</a> does are: 
+</p>
+<ol>
+	<li>Take in an argument specifying whether to target the staging or production server. </li>
+	<li>Deploy the database 
+	<ol>
+		<li>If deploying to the staging server, synchronize the schema from the production server (using RedGate&#39;s excellent schema comparison and synchronization <a href="http://www.red-gate.com/products/SQL_Compare/index.htm">tool</a>). </li>
+		<li>If deploying to the staging server, synchronize the data from the production server (using <a href="http://www.red-gate.com/products/SQL_Data_Compare/index.htm">another</a> RedGate tool). This and the step before insures that the staging server has a db that&#39;s a mirror of production. </li>
+		<li>Run migrations to get the db up to the latest version. </li>
+	</ol>
+	</li>
+	<li>Deploy the site 
+	<ol>
+		<li>Compile the Visual Studio web site solution. </li>
+		<li>Copy the site files to the staging or production server (using the free <a href="http://en.wikipedia.org/wiki/Robocopy">Robycopy</a> tool). </li>
+	</ol>
+	</li>
+</ol>
+<p>
+I should run the unit tests as a part of the deployment task, but since the project is fairly small, I&#39;ve been running them independently before deploying. I have a task set up for the unit tests, so I could fairly easily plug this in later. 
+</p>
+<p>
+There&#39;s a task that recreates the test database on a developer&#39;s local system, and it actually still calls out to an older PowerShell script that I haven&#39;t bothered converting yet (but having Rake and PowerShell interact is fairly seamless at the moment). 
+</p>
+<p>
+<a href="/file.axd?file=Rakefile.rb">Here&#39;s my Rakefile</a>. The steps outlined above should be recognizable in the script, but please leave a comment if you have a question about anything in particular in it or any suggestions as well. 
+</p>

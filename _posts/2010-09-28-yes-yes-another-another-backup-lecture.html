@@ -1,0 +1,42 @@
+--- 
+layout: default
+title: Yes, Yes. Another, Another Backup Lecture.
+---
+<p>I realize there have been some <a href="http://daringfireball.net/2010/03/ode_to_diskwarrior_superduper_dropbox">very</a> <a href="http://www.43folders.com/2010/03/15/yes-another-backup-lecture">popular</a> web celebrities in recent memory post about backups, but here goes.</p>
+<p>Spurred on by posts like those from Gruber and Merlin Mann, I've been working on getting backups right this year. A hard drive failure a few months ago along with a <a href="http://vimeo.com/13607925">fire in my apartment building</a> recently also provided<em> </em>motivation, and it looks like I've settled on at least some kind of strategy. Maybe it's a little overkill and clumsy, and maybe I have a weird setup, but it feels redundant enough that I won't lose my (precious) home movies and personal pictures.</p>
+<p>I don't think of my setup so much as a strategy (although I have a backup plan that I follow regularly now), but rather as a hodgepodge that works for me and contains pieces that may be applicable to a lot of other people. So take away from it what you can, and I hope it helps.</p>
+<h1>Online Services</h1>
+<p>It turns out a lot of content I produce is uploaded and shared somewhere. Practically all of my pictures are hosted at Flickr (some marked as private or just for friends), my videos at Vimeo, my email to Gmail, many documents to Google Docs, etc, and I consider this a form of offsite backup.</p>
+<p>I also use Dropbox heavily. While not only serving to synchronize files on both my Windows 7 and OS X partitions, it also is a form of cloud backup. I've come to use in in place of the user documents folder on both OSes.</p>
+<p>For code, I use version control systems (Team Foundation Server at work, and GitHub for personal projects). That, again, is redundant, as I have local copies on my laptop and another stored on a server somewhere.</p>
+<p>It could be said that you're entrusting too much to a third party,  but I just might trust Flickr with its thousands (millions?)  of users and the responsibility that goes along with maintaining a  datacenter to host all of this content reliably than I do my own backup  practices.</p>
+<p>However, I certainly do local backups, but it's interesting to note the impact of modern "cloud computing" services (whatever that means to you) on data redundancy.</p>
+<h1>My Setup</h1>
+<p>Even though I'm an ASP.NET developer, I develop on a MacBook Pro running Windows 7 on Boot Camp during the day (Macs are... pretty). In the off hours at home, I boot into OS X Snow Leopard where all my media lives in iTunes, Aperture, iMovie, etc. So, I have two environments to back up: Windows 7 and Snow Leopard.</p>
+<p>I also have a Windows Home Server device (an <a href="http://amzn.com/B001OI2ZG4">HP EX485 Mediasmart</a>), which I use for backups and network storage. The device has redundant storage spread across several discs, but I want to back it up too (in case the machine fails and for offsite backups). Make that three environments.</p>
+<h1>Backup Tools<br /></h1>
+<p>Here are the tools I use:</p>
+<ul>
+</ul>
+<div>
+<ul>
+<li>Windows Home Server (WHS)</li>
+<li>WHS's included backup software for Windows 7</li>
+<li>OS X's Time Machine (which can use WHS as a backup drive via software included with the HP WHS device)</li>
+<li>SuperDuper!</li>
+<li>WinClone</li>
+<li>Two external laptop hard drives</li>
+<li>Two external desktop drives with lots of space</li>
+<li>An extra 1 or 2 external drives for juggling files or images around in case of an emergency</li>
+</ul>
+</div>
+<h1>Process</h1>
+<p>My setup is a little tricky because I spend time booted into two different OSes. This can make it difficult to reliably schedule backup jobs (e.g. if I work in the evening and stay booted into Windows 7, then Time Machine or SuperDuper's nightly backup won't run on the OS X side). While not foolproof, I've found I get enough coverage so that I shouldn't lose more than, at worst, a week's worth of data on my hard drive.</p>
+<p>If I'm in Windows 7 at home for an extended period of time, Windows Home Server will automatically back up the Windows partition every night at midnight, or I can explicitly trigger a backup.</p>
+<p>When in OS X (where I am most of the time at home), Time Machine backs up to WHS frequently (I think it's every hour or so). Since Time Machine takes snapshots of files and allows you to view file history, I'm able to recover deleted or accientally overwritten files within a certain window (<a href="http://www.infrageeks.com/groups/infrageeks/wiki/b32ae/">Recovery Point Objective vs Recovery Time Objective</a>).</p>
+<p>I also make an image of the OS X partition regularly using SuperDuper! and one of the external laptop drives. If my laptop's hard drive completely fails, I can get my computer back up in the time it takes me to take the old hard drive out of my laptop and replace it with the new one containing the image. The SuperDuper! image isn't taken as regularly as Time Machine backups, but I can more quickly get my machine up from a failed drive than with Time Machine restoration process.</p>
+<p>To image the Windows 7 partition from OS X, I use WinClone. I take weekly snapshots, and store them on a separate partition of the laptop drive.</p>
+<p>I use Windows Home Server's included backup utility to archive files to one of the large desktop drives every week.</p>
+<p>For offsite backups, I rotate both the laptop and desktop drives every few weeks and store a set of drives in my office at work.</p>
+<h1>Remember Your Discs</h1>
+<p>If you need to troubleshoot your system or do a restoration, it's important to have your installation media. Both the Windows 7 and OS X discs include diagnostic utilities that you can use on boot. You should also have the discs for restoring with Time Machine (on the OS X disc) or with Windows Home Server (on the included WHS media).</p>
