@@ -1,0 +1,14 @@
+.post .contact li{padding:0;}
+.post .contact input{margin:0;}
+.post .contact textarea{margin:14px 0 0;}
+.post .contact label{padding:16px 0 4px;}
+#comments span{padding:35px 0 50px;}
+#content{_margin:0;}
+#sidebar{_margin:0;}
+#header .fusion{margin-top:38px;float:right;margin-right:5px;}
+#header .fusiontext{display:block;width:140px;text-align:right;}
+#header .fusiontext a{font-size:13px;font-weight:400;line-height:15px;border-bottom:none;}
+#header .fusionblurb{font-family:'monaco',Courier,monospace;font-size:12px;font-weight:400;margin-left:5px;line-height:9px;border-bottom:none;margin-top:10px;}
+#header .fusionblurb:after{/* Flips the renderer back to antialiased text */
+content:" ";font-family:Arial,Helvetica,sans-serif;font-size:16px;}
+#header .fusionimg{float:right;padding-left:10px;}
