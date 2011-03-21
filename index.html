@@ -1,5 +1,5 @@
 ---
-layout: defaultnew
+layout: default
 title: Doing the Dishes
 ---
 
@@ -7,7 +7,7 @@ title: Doing the Dishes
 <div class="post">
 	<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 	
-	<small>Posted on {{ post.date | date_to_long_string }}</small>
+	<small>{{ post.date | date_to_long_string }}</small>
 
 	<div class="article">
 		{{ post.content }}
