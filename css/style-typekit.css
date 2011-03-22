@@ -20,11 +20,9 @@ a
 }
 hr
 {
-	border: 0;
-	border-top: none;
 	clear: both;
 	color: #fff;
-	margin-top: 35px;
+	margin: 50px 0;
 	width: 620px;
 }
 ::-moz-selection
@@ -148,15 +146,19 @@ strong
 	font-weight: 700;
 	margin: 0px 0 10px;
 }
-.post h1,.post h1 a
+#logo h1,.post h1,.post h1 a
 {
 	border-bottom: none;
-	color: #000;
+/*	color: #000;*/
 	font-family: "ff-meta-web-pro-condensed-1","ff-meta-web-pro-condensed-2", san-serif;
 	font-size: 32px;
 	font-weight: 400;
 	line-height: 40px;
 	margin: -5px 0 10px;
+}
+#logo h1
+{
+	margin-bottom: 0;
 }
 .post h3,.post h4
 {
@@ -361,12 +363,15 @@ h6
 {
 	background-color: #eee;
 	border: 1px #bababa solid;
-	border-bottom: none;
 	border-radius: 5px;
 	font-weight: 700;
-	moz-border-radius: 5px;
+	-moz-border-radius: 5px;
 	padding: 3px 4px 4px 4px;
 	webkit-border-radius: 5px;
+}
+.navigation a:hover
+{
+	border: 1px #bababa solid;
 }
 .navigation .alignright
 {
@@ -395,25 +400,6 @@ h6
 	border-top: 1px solid #eee;
 	display: block;
 }
-.sponsor
-{
-	background-color: #efefef;
-	color: #333;
-	display: block;
-	font-size: 18px;
-	padding: 0 2px 3px;
-}
-.sponsor a
-{
-	border-bottom: none;
-	color: #333;
-}
-.sponsor a:hover
-{
-	background-color: #efefef;
-	color: #666;
-	webkit-transition: background-color .5s linear;
-}
 #dsc
 {
 	color: #666;
@@ -434,7 +420,8 @@ a:hover
 	color: #D51920;
 	webkit-transition: background-color .5s linear;
 }
-.post h1:hover,.post h2:hover,.post h3:hover,.post h4:hover,.post linked:hover,ll a:hover,pm a:hover
+/*.post h1:hover,.post h2:hover,.post h3:hover,.post h4:hover,*/
+.post linked:hover,ll a:hover,pm a:hover
 {
 	color: #D51920;
 	webkit-transition: background-color .5s linear;
