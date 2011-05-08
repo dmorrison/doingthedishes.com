@@ -28,3 +28,5 @@ Not for the faint of heart, but to me it's comfortable and fits in with my desir
 You can host your site at GitHub by storing your Jekyll repository there and using the [GitHub Pages](http://pages.github.com/) feature. You can find out more about how this is done by poking around the [Jekyll](https://github.com/mojombo/jekyll) repo on GitHub and by looking at some of the sites using Jekyll that are listed in the project's wiki.
 
 Basically, each time you push a commit to your blog repository on GitHub, your site is regenerated and republished. It's easy enough just to upload the files that Jekyll generates to your own server, but I find the workflow of having my blog automatically refreshed every time I make a commit very appealing.
+
+**Update (May 8, 2011)**: [Here's](https://github.com/dmorrison/dmorrison.github.com) a link to this blog's source on GitHub.
