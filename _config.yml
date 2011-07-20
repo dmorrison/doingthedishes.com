@@ -1,3 +1,4 @@
 pygments: true
 server: true
 auto: true
+mardown: rdiscount
