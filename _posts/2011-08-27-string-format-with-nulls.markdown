@@ -19,4 +19,4 @@ You'd think it would be necessary to do something like so instead:
 @(Model.HasValue ? Model.Value.ToString("yyyy-MM-dd") : "")
 {% endhighlight %}
 
-However, String.Format in the .NET framework will [just return an empty string](http://geekswithblogs.net/mnf/archive/2008/01/09/passing-null-parameters-to-string.format-is-safe.aspx) when formatting null values. I thought this was handy, and it seems pops up in a surprising number of cases.
+However, String.Format in the .NET framework will [just return an empty string](http://geekswithblogs.net/mnf/archive/2008/01/09/passing-null-parameters-to-string.format-is-safe.aspx) when formatting null values. I thought this was handy, and it seems to pop up in a surprising number of cases.
