@@ -11,7 +11,5 @@ So how would you specify a template for nullable `DateTime?` Since Windows doesn
 
 It turns out that if you just specify a model type of `DateTime?`, then a template named `DataTime.cshtml` can cover both cases of displaying a nullable and non-nullable value type. Here's the full contents of my display template for `DateTime?`:
 
-{% highlight csharp %}
-@model DateTime?
-@string.Format("{0:yyyy-MM-dd}", Model)
-{% endhighlight %}
+    @model DateTime?
+    @string.Format("{0:yyyy-MM-dd}", Model)
