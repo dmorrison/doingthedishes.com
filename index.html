@@ -3,6 +3,8 @@ layout: default
 title: Doing the Dishes
 ---
 
+<!-- Test -->
+
 {% for post in site.posts limit:5 %}
 <div class="post">
 	<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
@@ -12,7 +14,7 @@ title: Doing the Dishes
 	<div class="article">
 		{{ post.content }}
 	</div>
-	
+
 	<hr/>
 </div>
 {% endfor %}
