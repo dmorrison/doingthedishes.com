@@ -15,6 +15,6 @@ I mistakenly took this method to work asynchronously. `Send()` actually seems to
 
 To fix this, I simply switched to using the `SendAsync()` method instead (which is new in .NET 4.5). I could have also used the older `BeginSend()` method if the project wasn't up to 4.5.
 
-Note that I still needed to wrap the call to `SendAync()` in a `try...catch` block in the (rare) case that our StatsD machine is down. More on that in my next post...
+Note that I still needed to wrap the call to `SendAync()` in a `try...catch` block in the (rare) case that our StatsD machine is down. More on that in my next post... **Update 2013-05-31**: See [here](/2013/05/31/using-try-catch-with-aync-methods-in-dot-net-4-5.html) for more detail on this.
 
 In addition to not having a hard dependency on StatsD, we immediately noticed an increase in responsiveness in several central endpoints of our app as we're now making all calls to StatsD aynchronously. Not our best moment, but we'll take the easy wins wherever we can. :)
