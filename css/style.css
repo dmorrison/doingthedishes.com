@@ -119,26 +119,26 @@ h1#archive
 
 .post h2
 {
-	font-size: 24px;
+	font-size: 20px;
 }
 
-.post h3,
-.post h4
+.post h3
 {
-	font-size: 20px;
-	font-weight: 400;
-	margin: 10px 0 5px;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 10px;
 }
 
 .post h4
 {
-	font-size: 20px;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .post h5
 {
-	font-size: 18px;
-	padding-bottom: 10px;
+	font-size: 12px;
+	font-weight: bold;
 }
 
 .post small
