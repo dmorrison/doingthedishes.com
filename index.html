@@ -3,15 +3,15 @@ layout: default
 title: Doing the Dishes
 ---
 
-<!-- Test -->
-
 {% for post in site.posts limit:5 %}
 <div class="post">
-	<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+	<div class="title">
+		<a href="{{ post.url }}">{{ post.title }}</a>
+	</div>
 	
 	<small>{{ post.date | date_to_long_string }}</small>
 
-	<div class="article">
+	<div class="post-content">
 		{{ post.content }}
 	</div>
 
@@ -20,6 +20,5 @@ title: Doing the Dishes
 {% endfor %}
 
 <div class="navigation">
-	<div class="alignleft"><a href="/archive.html" >Archive</a></div>
-	<div class="alignright"></div>
+	<div class="alignleft"><a href="/archive.html">Archive Foo</a></div>
 </div>
